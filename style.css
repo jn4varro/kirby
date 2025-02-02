@@ -1,0 +1,235 @@
+root {
+    --bg: #77d8ff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #212324;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.main {
+    width: 400px;
+    height: 300px;
+    scale: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+div {
+  position: absolute;
+}
+
+.cuerpo{
+  width: 220px;
+  height: 220px;
+  border: solid  4px rgb(19, 16, 18);
+  background-color: pink;
+  border-radius: 50%;
+  box-shadow:inset 0 -19px 0 0 rgb(238, 137, 179);
+  clip-path: inset( 0 10px 0 9px round 10px 10px 0 0);
+}
+
+.manos{
+  width: 200px;
+  height: 100px;
+  background-color: pink;
+  border-radius: 50%;
+  transform: rotate(-25deg);
+  top: 80px;
+  left: 50px;
+  border: solid  4px rgb(19, 16, 18);
+  z-index: -1;
+  box-shadow:inset 0 -19px 0 0 rgb(238, 137, 179);
+}
+
+.mano-izquierda {
+  width: 200px;
+  height: 100px;
+  background-color: pink;
+  border-radius: 50%;
+  transform: rotate(25deg);
+  top: 80px;
+  left: 150px;
+  border: solid  4px rgb(19, 16, 18);
+  z-index: -1;
+  box-shadow:inset 0 -19px 0 0 rgb(238, 137, 179);
+}
+
+.pies{
+  width: 220px;
+  height: 80px;
+  background-color: rgb(226, 51, 110);
+  border-radius:50%;
+  border: solid 4px;
+  transform: rotate(-30deg);
+  top: 170px;
+  left: 60px;
+  z-index: -1;
+  box-shadow:inset 0 -10px 0 0 rgb(133, 32, 65);
+}
+
+.pies::after{
+  content: '';
+  width: 220px;
+  height: 80px;
+  background-color: rgb(226, 51, 110);
+  border-radius:50%;
+  border: solid 4px;
+  transform: rotate(60deg);
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  z-index: -1;
+  box-shadow:inset 0 -10px 0 0 rgb(133, 32, 65);
+}
+
+.ojos{
+  width: 20px;
+  height: 70px;
+  background-color: rgb(30, 114, 192);
+  border-radius: 50%;
+  border: solid 4px;
+  top: 40px;
+  left: 60px;
+  overflow: hidden;
+}
+
+.iris{
+  content:'';
+  width: 30px;
+  height: 70px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  border: solid 4px;
+  position: absolute;
+  top: -20px;
+  left: -8px;
+}
+
+.iris::before{
+  content: "";
+  width: 15px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 19px;
+  left: 6px;
+}
+
+.ojo-izquierdo{
+  width: 20px;
+  height: 70px;
+  background-color: rgb(30, 114, 192);
+  border-radius: 50%;
+  border: solid 4px;
+  top: 40px;
+  left: 120px;
+  overflow: hidden;
+}
+
+.iri-izquierdo{
+  width: 30px;
+  height: 70px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  border: solid 4px;
+  position: absolute;
+  top: -20px;
+  left: -8px;
+}
+
+.iri-izquierdo::before{
+  content: "";
+  width: 15px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 19px;
+  left: 6px;
+}
+
+.boca{
+  width: 40px;
+  height: 40px;
+  border: solid 3px;
+  border-radius: 50%;
+  top: 90px;
+  left: 80px;
+  clip-path: inset( 37px 0 0 0 round 100% 100% 0 0  );
+}
+
+.mofletes{
+  width: 35px;
+  height: 20px;
+  background-color: rgb(238, 137, 179);
+  top: 95px;
+  left: 19px;
+  border-radius:50%;
+}
+
+.mofletes::after{
+  content: '';
+  width: 35px;
+  height: 20px;
+  background-color: rgb(238, 137, 179);
+  top: 0px;
+  left: 139px;
+  border-radius:50%;
+  position: absolute;
+}
+
+.sombra-suelo{
+  width: 280px;
+  height: 20px;
+  background-color: rgb(128, 128, 128);
+  border-radius: 50%;
+  top: 270px;
+  z-index: -3;
+}
+
+.sombra-suelo::after{
+  content: '';
+  width: 80px;
+  height: 20px;
+  background-color: rgb(77, 77, 77);
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: 30px;
+  z-index: 0;
+}
+
+.sombra-suelo::before{
+  content: '';
+  width: 80px;
+  height: 20px;
+  background-color: rgb(77, 77, 77);
+  border-radius: 50%;
+  position: absolute;
+  top:-6px;
+  left: 180px;
+  z-index: 0;
+}
+
+p{
+  font-size: 50px;
+  top: 600px;
+  position: absolute;
+  font-family: 'Roboto', monospace;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  left: 320px;
+}
